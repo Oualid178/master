@@ -1,4 +1,6 @@
-/* General Styles */
+/* =======================
+   General Styles
+======================= */
 body {
     font-family: 'Cairo', sans-serif;
     background-color: #f5f5f5;
@@ -17,7 +19,14 @@ body {
     padding: 20px 0;
 }
 
-/* Navigation Bar */
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* =======================
+   Navigation Bar
+======================= */
 .navbar {
     background-color: #2E8B57;
     padding: 10px 0;
@@ -54,7 +63,9 @@ body {
     color: #FFD700;
 }
 
-/* Hero Section */
+/* =======================
+   Hero Section
+======================= */
 .hero {
     background: url('image.jpg') no-repeat center center/cover;
     color: #fff;
@@ -81,6 +92,7 @@ body {
 .hero h1 {
     font-size: 48px;
     margin-bottom: 20px;
+    line-height: 1.2;
 }
 
 .hero p {
@@ -91,561 +103,93 @@ body {
 .hero .btn {
     background-color: #FFD700;
     color: #2E8B57;
-    padding: 10px 20px;
-    text-decoration: none;
+    padding: 10px 25px;
     font-size: 18px;
+    text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .hero .btn:hover {
     background-color: #e6b800;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-/* Units Section */
-.units {
-    padding: 50px 0;
-    background-color: #fff;
-}
-
-.units h2 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 40px;
-    color: #2E8B57;
-}
-
-.unit-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.unit-card {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s;
-}
-
-.unit-card:hover {
-    transform: translateY(-10px);
-}
-
-.unit-card h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #2E8B57;
-}
-
-.unit-card p {
-    font-size: 16px;
-    color: #555;
-}
-
-/* Student Projects Section */
-.student-projects {
-    padding: 50px 0;
-    background-color: #f5f5f5;
-}
-
-.student-projects h2 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 40px;
-    color: #2E8B57;
-}
-
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.project-card {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s;
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
-}
-
-.project-card h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #2E8B57;
-}
-
-.project-card p {
-    font-size: 16px;
-    color: #555;
-}
-
-.project-card .btn {
-    background-color: #FFD700;
-    color: #2E8B57;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.project-card .btn:hover {
-    background-color: #e6b800;
-}
-
-/* Blog Section */
-.blog {
-    padding: 50px 0;
-    background-color: #fff;
-}
-
-.blog h2 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 40px;
-    color: #2E8B57;
-}
-
-.blog-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.blog-card {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s;
-}
-
-.blog-card:hover {
-    transform: translateY(-10px);
-}
-
-.blog-card h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #2E8B57;
-}
-
-.blog-card p {
-    font-size: 16px;
-    color: #555;
-}
-
-.blog-card .btn {
-    background-color: #FFD700;
-    color: #2E8B57;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.blog-card .btn:hover {
-    background-color: #e6b800;
-}
-
-/* Forum Section */
-.forum {
-    padding: 50px 0;
-    background-color: #f5f5f5;
-}
-
-.forum h2 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 40px;
-    color: #2E8B57;
-}
-
-.forum-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.topic-card {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s;
-}
-
-.topic-card:hover {
-    transform: translateY(-10px);
-}
-
-.topic-card h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #2E8B57;
-}
-
-.topic-card p {
-    font-size: 16px;
-    color: #555;
-}
-
-.topic-card .btn {
-    background-color: #FFD700;
-    color: #2E8B57;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.topic-card .btn:hover {
-    background-color: #e6b800;
-}
-
-/* Digital Library Section */
-.digital-library {
-    padding: 50px 0;
-    background-color: #fff;
-}
-
-.digital-library h2 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 40px;
-    color: #2E8B57;
-}
-
-.library-filters {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.library-filters input, .library-filters select {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    text-align: right;
-}
-
-.library-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
+/* =======================
+   Sections Cards (Units, Projects, Blog, Forum, Library)
+======================= */
+.unit-card,
+.project-card,
+.blog-card,
+.topic-card,
 .book-card {
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.unit-card:hover,
+.project-card:hover,
+.blog-card:hover,
+.topic-card:hover,
 .book-card:hover {
     transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
 
+.unit-card h3,
+.project-card h3,
+.blog-card h3,
+.topic-card h3,
 .book-card h3 {
     font-size: 20px;
     margin-bottom: 10px;
     color: #2E8B57;
 }
 
+.unit-card p,
+.project-card p,
+.blog-card p,
+.topic-card p,
 .book-card p {
     font-size: 16px;
     color: #555;
+    line-height: 1.7;
 }
 
-.book-card .btn {
-    background-color: #FFD700;
-    color: #2E8B57;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.book-card .btn:hover {
-    background-color: #e6b800;
-}
-
-/* Newsletter Section */
-.newsletter {
-    padding: 50px 0;
-    background-color: #f5f5f5;
-    text-align: center;
-}
-
-.newsletter h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #2E8B57;
-}
-
-#newsletterForm {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-#newsletterEmail {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    width: 300px;
-    text-align: right;
-}
-
-.newsletter .btn {
-    background-color: #FFD700;
-    color: #2E8B57;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.newsletter .btn:hover {
-    background-color: #e6b800;
-}
-
-#newsletterMessage {
-    margin-top: 10px;
-    font-size: 16px;
-    color: #2E8B57;
-}
-
-/* Contact Section */
-.contact {
-    padding: 50px 0;
-    background-color: #fff;
-}
-
-.contact h2 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 40px;
-    color: #2E8B57;
-}
-
-#contactForm {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-#contactForm input, #contactForm textarea {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    text-align: right;
-}
-
-#contactForm textarea {
-    resize: vertical;
-}
-
-.contact .btn {
-    background-color: #FFD700;
-    color: #2E8B57;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.contact .btn:hover {
-    background-color: #e6b800;
-}
-
-#contactMessage {
-    margin-top: 10px;
-    font-size: 16px;
-    color: #2E8B57;
-}
-
-/* Login Section */
-.login {
-    padding: 50px 0;
-    background-color: #fff;
-}
-
-.login h2 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 40px;
-    color: #2E8B57;
-}
-
-#loginForm {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-#loginForm input {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    text-align: right;
-}
-
-.login .btn {
-    background-color: #FFD700;
-    color: #2E8B57;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.login .btn:hover {
-    background-color: #e6b800;
-}
-
-.login p {
-    text-align: center;
-    font-size: 16px;
-}
-
-.login a {
-    color: #2E8B57;
-    text-decoration: none;
-}
-
-.login a:hover {
-    text-decoration: underline;
-}
-
-/* Register Section */
-.register {
-    padding: 50px 0;
-    background-color: #fff;
-}
-
-.register h2 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 40px;
-    color: #2E8B57;
-}
-
-#registerForm {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-#registerForm input {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    text-align: right;
-}
-
-.register .btn {
-    background-color: #FFD700;
-    color: #2E8B57;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.register .btn:hover {
-    background-color: #e6b800;
-}
-
-.register p {
-    text-align: center;
-    font-size: 16px;
-}
-
-.register a {
-    color: #2E8B57;
-    text-decoration: none;
-}
-
-.register a:hover {
-    text-decoration: underline;
-}
-
-/* Footer */
-footer {
-    background-color: #2E8B57;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.social-icons {
-    margin-bottom: 10px;
-}
-
-.social-icons a {
-    margin: 0 10px;
-}
-
-.social-icons img {
-    width: 24px;
-    height: 24px;
-}
-
-footer p {
-    margin: 0;
-    font-size: 14px;
-}
-
-/* Professors Section */
-.professors {
-    padding: 50px 0;
-    background-color: #fff;
-}
-
-.professors h2 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 40px;
-    color: #2E8B57;
-}
-
-.professor-grid {
+.unit-grid,
+.projects-grid,
+.blog-grid,
+.forum-grid,
+.library-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
+.btn {
+    background-color: #FFD700;
+    color: #2E8B57;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #e6b800;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* =======================
+   Professors Section
+======================= */
 .professor-card {
     background-color: #f9f9f9;
     padding: 20px;
@@ -712,7 +256,71 @@ footer p {
     color: #FFD700;
 }
 
-/* تصميم للهواتف */
+/* =======================
+   Forms (Contact, Login, Register, Upload, Newsletter)
+======================= */
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: right;
+}
+
+textarea {
+    resize: vertical;
+}
+
+#newsletterForm {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.newsletter h2,
+.contact h2,
+.login h2,
+.register h2,
+.upload-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #2E8B57;
+}
+
+/* =======================
+   Footer
+======================= */
+footer {
+    background-color: #2E8B57;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* =======================
+   Responsive Design
+======================= */
 @media (max-width: 768px) {
     .navbar .logo {
         font-size: 20px;
@@ -758,189 +366,4 @@ footer p {
     .professor-contact a {
         font-size: 20px;
     }
-}
-
-/* General Styles */
-body {
-    font-family: 'Cairo', sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    direction: rtl;
-    text-align: right;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px 0;
-}
-
-/* Navigation Bar */
-.navbar {
-    background-color: #2E8B57;
-    padding: 10px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.navbar .logo {
-    color: #fff;
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.nav-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.nav-links li {
-    margin-right: 20px;
-}
-
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: #FFD700;
-}
-
-/* Upload Section */
-.upload-section {
-    padding: 50px 0;
-    background-color: #fff;
-}
-
-.upload-section h2 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 40px;
-    color: #2E8B57;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    display: block;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.form-group textarea {
-    resize: vertical;
-}
-
-.btn {
-    background-color: #FFD700;
-    color: #2E8B57;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.btn:hover {
-    background-color: #e6b800;
-}
-
-/* Student Projects Section */
-.student-projects {
-    padding: 50px 0;
-    background-color: #f5f5f5;
-}
-
-.student-projects h2 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 40px;
-    color: #2E8B57;
-}
-
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.project-card {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s;
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
-}
-
-.project-card h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #2E8B57;
-}
-
-.project-card .btn {
-    background-color: #2E8B57;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.project-card .btn:hover {
-    background-color: #2575fc;
-}
-
-/* Footer */
-footer {
-    background-color: #2E8B57;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.social-icons {
-    margin-bottom: 10px;
-}
-
-.social-icons a {
-    margin: 0 10px;
-}
-
-.social-icons img {
-    width: 24px;
-    height: 24px;
-}
-
-footer p {
-    margin: 0;
-    font-size: 14px;
 }
