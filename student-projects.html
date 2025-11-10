@@ -1,77 +1,229 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>عروض الطلبة - ماستر الدرس الشرعي وقضايا المجتمع</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>عروض الطلبة - ماستر الدرس الشرعي وقضايا المجتمع</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #fff;
+      color: #000;
+      margin: 0;
+      direction: rtl;
+    }
+    .container { width: 90%; margin: auto; }
+    header { background: #2E8B57; padding: 15px 0; }
+    .navbar .logo { color: #fff; font-weight: 700; text-decoration: none; font-size: 20px; }
+    .nav-links { list-style: none; display: flex; flex-wrap: wrap; gap: 15px; }
+    .nav-links a { color: #fff; text-decoration: none; transition: 0.3s; }
+    .nav-links a:hover { color: #FFD700; }
+
+    /* Projects Section */
+    .student-projects { padding: 60px 0; text-align: center; }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+    .project-card {
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 20px;
+      background-color: #f9f9f9;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+    .project-card:hover { transform: translateY(-5px); }
+    .project-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      object-fit: cover;
+      height: 180px;
+    }
+    .project-card h3 { color: #2E8B57; font-size: 18px; margin: 10px 0; }
+    .project-card p { font-size: 15px; color: #333; }
+
+    .btn {
+      display: inline-block;
+      background-color: #FFD700;
+      color: #2E8B57;
+      padding: 8px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background-color: #e6b800;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    /* Stars */
+    .star-rating {
+      margin: 10px 0;
+      color: #FFD700;
+      cursor: pointer;
+      font-size: 20px;
+    }
+    .star.selected { text-shadow: 0 0 5px #FFD700; }
+
+    /* Footer */
+    footer {
+      background-color: #2E8B57;
+      color: #fff;
+      text-align: center;
+      padding: 25px 0;
+      margin-top: 50px;
+    }
+    .footer-links, .social-icons { margin-bottom: 10px; }
+    .footer-links a { color: #fff; margin: 0 10px; text-decoration: none; }
+    .footer-links a:hover { color: #FFD700; }
+    .social-icons a { color: #fff; margin: 0 8px; font-size: 18px; }
+
+    /* Back to Top */
+    #backToTop {
+      position: fixed;
+      bottom: 25px;
+      left: 25px;
+      background-color: #FFD700;
+      color: #2E8B57;
+      border: none;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      font-size: 20px;
+      cursor: pointer;
+      display: none;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
+    #backToTop:hover { background-color: #e6b800; }
+  </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <header>
-        <nav class="navbar">
-            <div class="container">
-                <a href="index.html" class="logo">ماستر الدرس الشرعي وقضايا المجتمع</a>
-                <ul class="nav-links">
-                    <li><a href="index.html">الرئيسية</a></li>
-                    <li><a href="about.html">عن الماستر</a></li>
-                    <li><a href="units.html">الوحدات الدراسية</a></li>
-                    <li><a href="professors.html">أعضاء هيئة التدريس</a></li>
-                    <li><a href="student-projects.html">عروض الطلبة</a></li>
-                    <li><a href="blog.html">المدونة العلمية</a></li>
-                    <li><a href="forum.html">المنتدى النقاشي</a></li>
-                    <li><a href="digital-library.html">المكتبة الرقمية</a></li>
-                    <li><a href="contact.html">اتصل بنا</a></li>
-                    <li><a href="login.html">تسجيل الدخول</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
 
-    <!-- Upload Section -->
-    <section class="upload-section">
-        <div class="container">
-            <h2>رفع عرض جديد</h2>
-            <form id="uploadForm" action="upload.php" method="POST" enctype="multipart/form-data">
-                <div class="form-group">
-                    <label for="title">عنوان العرض:</label>
-                    <input type="text" id="title" name="title" required>
-                </div>
-                <div class="form-group">
-                    <label for="description">وصف العرض:</label>
-                    <textarea id="description" name="description" rows="4" required></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="file">اختر ملف العرض (PDF):</label>
-                    <input type="file" id="file" name="file" accept=".pdf" required>
-                </div>
-                <button type="submit" class="btn">رفع العرض</button>
-            </form>
-        </div>
-    </section>
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar container">
+      <a href="index.html" class="logo">ماستر الدرس الشرعي وقضايا المجتمع</a>
+      <ul class="nav-links">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="about.html">عن الماستر</a></li>
+        <li><a href="units.html">الوحدات الدراسية</a></li>
+        <li><a href="professors.html">أعضاء هيئة التدريس</a></li>
+        <li><a href="student-projects.html" class="active">عروض الطلبة</a></li>
+        <li><a href="blog.html">المدونة العلمية</a></li>
+        <li><a href="forum.html">المنتدى النقاشي</a></li>
+        <li><a href="digital-library.html">المكتبة الرقمية</a></li>
+        <li><a href="contact.html">اتصل بنا</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Student Projects Section -->
-    <section class="student-projects">
-        <div class="container">
-            <h2>عروض الطلبة</h2>
-            <div class="projects-grid">
-                <?php include 'display_projects.php'; ?>
-            </div>
-        </div>
-    </section>
+  <!-- Student Projects Section -->
+  <section class="student-projects">
+    <div class="container">
+      <h2 class="animate__animated animate__fadeInUp">عروض الطلبة</h2>
+      <div class="projects-grid">
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="social-icons">
-                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            </div>
-            <p>&copy; 2024 الكلية المتعددة التخصصات - الرشيدية، جامعة مولاي إسماعيل. جميع الحقوق محفوظة.</p>
+        <div class="project-card animate__animated animate__fadeInUp animate__delay-1s">
+          <img src="project1.jpg" alt="عرض في مقاصد اللغة العربية">
+          <h3>عرض في مقاصد اللغة العربية</h3>
+          <p>تاريخ العرض: 15 ربيع الأول 1446 / 25 أكتوبر 2024</p>
+          <div class="star-rating">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+          </div>
+          <a href="#" class="btn" data-file="عروض/عرض-مقاصد-اللغة-العربية.pdf">تحميل العرض</a>
         </div>
-    </footer>
+
+        <div class="project-card animate__animated animate__fadeInUp animate__delay-2s">
+          <img src="project2.jpg" alt="عرض في المقاصد العقدية">
+          <h3>عرض في المقاصد العقدية</h3>
+          <p>تاريخ العرض: 20 ربيع الأول 1446 / 30 أكتوبر 2024</p>
+          <div class="star-rating">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+          </div>
+          <a href="#" class="btn" data-file="عروض/عرض-المقاصد-العقدية.pdf">تحميل العرض</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="about.html">عن الماستر</a>
+        <a href="contact.html">اتصل بنا</a>
+        <a href="privacy-policy.html">سياسة الخصوصية</a>
+      </div>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook"><i class="fab https://www.facebook.com/oualid.jemaoui"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p>&copy; 2024 الكلية المتعددة التخصصات - الرشيدية، جامعة مولاي إسماعيل. جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" title="العودة إلى الأعلى">↑</button>
+
+  <script>
+    // Back to Top Button
+    window.onscroll = function() {
+      const btn = document.getElementById("backToTop");
+      btn.style.display = (document.documentElement.scrollTop > 200) ? "block" : "none";
+    };
+    document.getElementById("backToTop").addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Star Rating System
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.star-rating').forEach(rating => {
+        const stars = rating.querySelectorAll('.star');
+        stars.forEach(star => {
+          star.addEventListener('click', function() {
+            stars.forEach(s => s.classList.remove('selected'));
+            this.classList.add('selected');
+            const value = this.getAttribute('data-value');
+            alert(`تم التقييم بـ ${value} نجوم`);
+          });
+        });
+      });
+
+      // Download Buttons
+      document.querySelectorAll('.btn[data-file]').forEach(button => {
+        button.addEventListener('click', function(e) {
+          e.preventDefault();
+          const filePath = this.getAttribute('data-file');
+          const link = document.createElement('a');
+          link.href = filePath;
+          link.download = filePath.split('/').pop();
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        });
+      });
+    });
+  </script>
+
 </body>
 </html>
