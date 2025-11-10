@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ماستر الدرس الشرعي وقضايا المجتمع: التجديد والرقمنة</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+    <!-- FullCalendar CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">ماستر الدرس الشرعي وقضايا المجتمع</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">عن الماستر</a></li>
+                    <li><a href="units.html">الوحدات الدراسية</a></li>
+                    <li><a href="professors.html">أعضاء هيئة التدريس</a></li>
+                    <li><a href="student-projects.html">عروض الطلبة</a></li>
+                    <li><a href="blog.html">المدونة العلمية</a></li>
+                    <li><a href="forum.html">المنتدى النقاشي</a></li>
+                    <li><a href="digital-library.html">المكتبة الرقمية</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                    <li><a href="login.html">تسجيل الدخول</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="animate__animated animate__fadeInUp">ماستر الدرس الشرعي وقضايا المجتمع: التجديد والرقمنة</h1>
+            <p class="animate__animated animate__fadeInUp animate__delay-1s">برنامج أكاديمي متخصص، يجمع بين العلوم الشرعية والرقمنة لتجديد الفكر الإسلامي ومواكبة العصر</p>
+            <a href="about.html" class="btn animate__animated animate__fadeInUp animate__delay-2s">تعرف على الماستر</a>
+        </div>
+    </section>
+
+    <!-- Calendar Section -->
+    <section class="calendar-section">
+        <div class="container">
+            <h2 class="animate__animated animate__fadeInUp">الأحداث القادمة</h2>
+            <div id="calendar" aria-label="تقويم الأحداث" class="animate__animated animate__fadeInUp animate__delay-1s"></div>
+        </div>
+    </section>
+
+    <!-- Units Section -->
+    <section class="units">
+        <div class="container">
+            <h2 class="animate__animated animate__fadeInUp">الوحدات الدراسية</h2>
+            <div class="unit-grid">
+                <div class="unit-card animate__animated animate__fadeInUp animate__delay-1s">
+                    <h3>مقاصد اللغة العربية ومقاصد الخطاب الشرعي</h3>
+                    <p>يدرسها: الأستاذ الدكتور محمد أسعد</p>
+                </div>
+                <div class="unit-card animate__animated animate__fadeInUp animate__delay-2s">
+                    <h3>المقاصد العقدية</h3>
+                    <p>يدرسها: الأستاذ الدكتور رشيد عمور</p>
+                </div>
+                <div class="unit-card animate__animated animate__fadeInUp animate__delay-3s">
+                    <h3>المهارات الذاتية والحياتية</h3>
+                    <p>يدرسها: الأستاذ الدكتور محمد أمراني</p>
+                </div>
+                <div class="unit-card animate__animated animate__fadeInUp animate__delay-4s">
+                    <h3>جهود التأسيس الأصولي</h3>
+                    <p>يدرسها: الأستاذ الدكتور عبد الغني قزيبر</p>
+                </div>
+                <div class="unit-card animate__animated animate__fadeInUp animate__delay-5s">
+                    <h3>الرقمنة والعلوم الشرعية تأصيلاً</h3>
+                    <p>يدرسها: الأستاذ الدكتور رشيد ناصيري</p>
+                </div>
+                <div class="unit-card animate__animated animate__fadeInUp animate__delay-6s">
+                    <h3>مقاصد الوحي</h3>
+                    <p>يدرسها: الأستاذ الدكتور عبد الكبير حميدي</p>
+                </div>
+                <div class="unit-card animate__animated animate__fadeInUp animate__delay-7s">
+                    <h3>اللغات الأجنبية</h3>
+                    <p>يدرسها: فريق متخصص</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Projects Section -->
+    <section class="student-projects">
+        <div class="container">
+            <h2 class="animate__animated animate__fadeInUp">عروض الطلبة</h2>
+            <div class="projects-grid">
+                <div class="project-card animate__animated animate__fadeInUp animate__delay-1s">
+                    <h3>عرض في مقاصد اللغة العربية</h3>
+                    <p>تاريخ العرض: 15 ربيع الأول 1446 / 25 أكتوبر 2024</p>
+                    <div class="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                    <a href="#" class="btn">تحميل العرض</a>
+                </div>
+                <!-- المزيد من العروض -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog">
+        <div class="container">
+            <h2 class="animate__animated animate__fadeInUp">المدونة العلمية</h2>
+            <div class="blog-grid">
+                <div class="blog-card animate__animated animate__fadeInUp animate__delay-1s">
+                    <h3>مقالة حول مقاصد الشريعة</h3>
+                    <p>تاريخ النشر: 15 ربيع الأول 1446 / 25 أكتوبر 2024</p>
+                    <a href="#" class="btn">قراءة المقالة</a>
+                </div>
+                <!-- المزيد من المقالات -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Forum Section -->
+    <section class="forum">
+        <div class="container">
+            <h2 class="animate__animated animate__fadeInUp">المنتدى النقاشي</h2>
+            <div class="forum-grid">
+                <div class="topic-card animate__animated animate__fadeInUp animate__delay-1s">
+                    <h3>نقاش حول مقاصد اللغة العربية</h3>
+                    <p>عدد المشاركات: 12</p>
+                    <a href="#" class="btn">المشاركة في النقاش</a>
+                </div>
+                <!-- المزيد من المواضيع -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Digital Library Section -->
+    <section class="digital-library">
+        <div class="container">
+            <h2 class="animate__animated animate__fadeInUp">المكتبة الرقمية</h2>
+            <div class="library-filters">
+                <input type="text" placeholder="بحث بالعنوان أو المؤلف">
+                <select>
+                    <option>الوحدة الدراسية</option>
+                    <option>مقاصد اللغة العربية</option>
+                    <option>الرقمنة والعلوم الشرعية</option>
+                    <!-- المزيد من الوحدات -->
+                </select>
+            </div>
+            <div class="library-grid">
+                <div class="book-card animate__animated animate__fadeInUp animate__delay-1s">
+                    <h3>كتاب مقاصد اللغة العربية</h3>
+                    <p>المدرس: الأستاذ الدكتور محمد أسعد</p>
+                    <a href="#" class="btn">تحميل الكتاب</a>
+                </div>
+                <!-- المزيد من الكتب -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2 class="animate__animated animate__fadeInUp">اشترك في النشرة الإخبارية</h2>
+            <form id="newsletterForm">
+                <input type="email" id="newsletterEmail" placeholder="البريد الإلكتروني" required>
+                <button type="submit" class="btn">اشترك</button>
+            </form>
+            <p id="newsletterMessage"></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2025 الكلية المتعددة التخصصات - الرشيدية، جامعة مولاي إسماعيل. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <!-- FullCalendar JS -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+    <script>
+        // Initialize the calendar
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendar');
+            if (calendarEl) {
+                var calendar = new FullCalendar.Calendar(calendarEl, {
+                    initialView: 'dayGridMonth',
+                    events: [
+                        {
+                            title: 'محاضرة في مقاصد اللغة العربية',
+                            start: '2024-03-05'
+                        },
+                        {
+                            title: 'ورشة عمل حول الرقمنة',
+                            start: '2024-03-15'
+                        },
+                        {
+                            title: 'ندوة حول المقاصد العقدية',
+                            start: '2024-04-01'
+                        }
+                    ]
+                });
+                calendar.render();
+            } else {
+                console.error("Calendar element not found!");
+            }
+        });
+
+        // Newsletter form submission
+        document.addEventListener('DOMContentLoaded', function() {
+            const newsletterForm = document.getElementById('newsletterForm');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    const email = document.getElementById('newsletterEmail').value;
+                    const newsletterMessage = document.getElementById('newsletterMessage');
+                    if (email && email.includes('@')) {
+                        if (newsletterMessage) {
+                            newsletterMessage.textContent = "شكرًا على اشتراكك!";
+                        }
+                        document.getElementById('newsletterEmail').value = '';
+                    } else {
+                        if (newsletterMessage) {
+                            newsletterMessage.textContent = "يرجى إدخال بريد إلكتروني صحيح.";
+                        }
+                    }
+                });
+            } else {
+                console.error("Newsletter form not found!");
+            }
+        });
+
+        // Star Rating System
+        document.addEventListener('DOMContentLoaded', function() {
+            const stars = document.querySelectorAll('.star-rating .star');
+            stars.forEach(star => {
+                star.addEventListener('click', function() {
+                    const value = this.getAttribute('data-value');
+                    alert(`تم التقييم بـ ${value} نجوم`);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

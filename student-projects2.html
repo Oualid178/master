@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عروض الطلبة - ماستر الدرس الشرعي وقضايا المجتمع</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">ماستر الدرس الشرعي وقضايا المجتمع</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">عن الماستر</a></li>
+                    <li><a href="units.html">الوحدات الدراسية</a></li>
+                    <li><a href="professors.html">أعضاء هيئة التدريس</a></li>
+                    <li><a href="student-projects.html">عروض الطلبة</a></li>
+                    <li><a href="blog.html">المدونة العلمية</a></li>
+                    <li><a href="forum.html">المنتدى النقاشي</a></li>
+                    <li><a href="digital-library.html">المكتبة الرقمية</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                    <li><a href="login.html">تسجيل الدخول</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Student Projects Section -->
+    <section class="student-projects">
+        <div class="container">
+            <h2 class="animate__animated animate__fadeInUp">عروض الطلبة</h2>
+            <div class="projects-grid">
+                <div class="project-card animate__animated animate__fadeInUp animate__delay-1s">
+                    <img src="project-image.jpg" alt="صورة العرض">
+                    <h3>عرض في مقاصد اللغة العربية</h3>
+                    <p>تاريخ العرض: 15 ربيع الأول 1446 / 25 أكتوبر 2024</p>
+                    <div class="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                    <a href="#" class="btn">تحميل العرض</a>
+                </div>
+                <!-- المزيد من العروض -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="about.html">عن الماستر</a>
+                <a href="contact.html">اتصل بنا</a>
+                <a href="privacy-policy.html">سياسة الخصوصية</a>
+            </div>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2024 الكلية المتعددة التخصصات - الرشيدية، جامعة مولاي إسماعيل. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="العودة إلى الأعلى">↑</button>
+
+    <script>
+        // Back to Top Button
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("backToTop").style.display = "block";
+            } else {
+                document.getElementById("backToTop").style.display = "none";
+            }
+        };
+        document.getElementById("backToTop").addEventListener("click", function() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        });
+
+        // Star Rating System
+        document.addEventListener('DOMContentLoaded', function() {
+            const stars = document.querySelectorAll('.star-rating .star');
+            stars.forEach(star => {
+                star.addEventListener('click', function() {
+                    const value = this.getAttribute('data-value');
+                    alert(`تم التقييم بـ ${value} نجوم`);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
