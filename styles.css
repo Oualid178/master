@@ -1,6 +1,4 @@
-/* =======================
-   General Styles
-======================= */
+* General Styles */
 body {
     font-family: 'Cairo', sans-serif;
     background-color: #f5f5f5;
@@ -8,8 +6,8 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    direction: rtl;
-    text-align: right;
+    direction: rtl; /* النص من اليمين إلى اليسار */
+    text-align: right; /* محاذاة النص إلى اليمين */
 }
 
 .container {
@@ -19,16 +17,9 @@ body {
     padding: 20px 0;
 }
 
-section {
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
-
-/* =======================
-   Navigation Bar
-======================= */
+/* Navigation Bar */
 .navbar {
-    background-color: #2E8B57;
+    background-color: #2E8B57; /* Green */
     padding: 10px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -45,11 +36,12 @@ section {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-start; /* تغيير من flex-end إلى flex-start */
 }
 
 .nav-links li {
-    margin-right: 20px;
+    margin-left: 0; /* إزالة الهامش الأيسر */
+    margin-right: 20px; /* إضافة هامش أيمن */
 }
 
 .nav-links a {
@@ -60,14 +52,12 @@ section {
 }
 
 .nav-links a:hover {
-    color: #FFD700;
+    color: #FFD700; /* Gold */
 }
 
-/* =======================
-   Hero Section
-======================= */
+/* Hero Section */
 .hero {
-    background: url('image.jpg') no-repeat center center/cover;
+    background: url('islamic-background.jpg') no-repeat center center/cover;
     color: #fff;
     padding: 100px 0;
     text-align: center;
@@ -81,7 +71,7 @@ section {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
 }
 
 .hero .container {
@@ -92,7 +82,6 @@ section {
 .hero h1 {
     font-size: 48px;
     margin-bottom: 20px;
-    line-height: 1.2;
 }
 
 .hero p {
@@ -101,200 +90,521 @@ section {
 }
 
 .hero .btn {
-    background-color: #FFD700;
-    color: #2E8B57;
-    padding: 10px 25px;
-    font-size: 18px;
+    background-color: #FFD700; /* Gold */
+    color: #2E8B57; /* Green */
+    padding: 10px 20px;
     text-decoration: none;
+    font-size: 18px;
     border-radius: 5px;
-    transition: background-color 0.3s, box-shadow 0.3s;
+    transition: background-color 0.3s;
 }
 
 .hero .btn:hover {
     background-color: #e6b800;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-/* =======================
-   Sections Cards (Units, Projects, Blog, Forum, Library)
-======================= */
-.unit-card,
-.project-card,
-.blog-card,
-.topic-card,
-.book-card {
+/* Units Section */
+.units {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.units h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #2E8B57; /* Green */
+}
+
+.unit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.unit-card {
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s;
 }
 
-.unit-card:hover,
-.project-card:hover,
-.blog-card:hover,
-.topic-card:hover,
-.book-card:hover {
+.unit-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
 
-.unit-card h3,
-.project-card h3,
-.blog-card h3,
-.topic-card h3,
-.book-card h3 {
+.unit-card h3 {
     font-size: 20px;
     margin-bottom: 10px;
-    color: #2E8B57;
+    color: #2E8B57; /* Green */
 }
 
-.unit-card p,
-.project-card p,
-.blog-card p,
-.topic-card p,
-.book-card p {
+.unit-card p {
     font-size: 16px;
     color: #555;
-    line-height: 1.7;
 }
 
-.unit-grid,
-.projects-grid,
-.blog-grid,
-.forum-grid,
+/* Student Projects Section */
+.student-projects {
+    padding: 50px 0;
+    background-color: #f5f5f5;
+}
+
+.student-projects h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #2E8B57; /* Green */
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #2E8B57; /* Green */
+}
+
+.project-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+.project-card .btn {
+    background-color: #FFD700; /* Gold */
+    color: #2E8B57; /* Green */
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.project-card .btn:hover {
+    background-color: #e6b800;
+}
+
+/* Blog Section */
+.blog {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.blog h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #2E8B57; /* Green */
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.blog-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+}
+
+.blog-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #2E8B57; /* Green */
+}
+
+.blog-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+.blog-card .btn {
+    background-color: #FFD700; /* Gold */
+    color: #2E8B57; /* Green */
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.blog-card .btn:hover {
+    background-color: #e6b800;
+}
+
+/* Forum Section */
+.forum {
+    padding: 50px 0;
+    background-color: #f5f5f5;
+}
+
+.forum h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #2E8B57; /* Green */
+}
+
+.forum-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.topic-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.topic-card:hover {
+    transform: translateY(-10px);
+}
+
+.topic-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #2E8B57; /* Green */
+}
+
+.topic-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+.topic-card .btn {
+    background-color: #FFD700; /* Gold */
+    color: #2E8B57; /* Green */
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.topic-card .btn:hover {
+    background-color: #e6b800;
+}
+
+/* Digital Library Section */
+.digital-library {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.digital-library h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #2E8B57; /* Green */
+}
+
+.library-filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.library-filters input, .library-filters select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: right; /* محاذاة النص في حقول الإدخال إلى اليمين */
+}
+
 .library-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
-.btn {
-    background-color: #FFD700;
-    color: #2E8B57;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s;
-    text-decoration: none;
-}
-
-.btn:hover {
-    background-color: #e6b800;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-}
-
-/* =======================
-   Professors Section
-======================= */
-.professor-card {
+.book-card {
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s;
 }
 
-.professor-card:hover {
+.book-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.professor-img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    margin-bottom: 15px;
-    border: 3px solid #2E8B57;
-    object-fit: cover;
-}
-
-.professor-card h3 {
-    font-size: 24px;
+.book-card h3 {
+    font-size: 20px;
     margin-bottom: 10px;
-    color: #2E8B57;
+    color: #2E8B57; /* Green */
 }
 
-.professor-title {
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 15px;
-}
-
-.professor-info {
-    text-align: right;
-    margin-bottom: 15px;
-}
-
-.professor-info p {
+.book-card p {
     font-size: 16px;
     color: #555;
-    margin-bottom: 10px;
 }
 
-.professor-info strong {
-    color: #2E8B57;
-}
-
-.professor-contact {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.professor-contact a {
-    color: #2E8B57;
-    font-size: 24px;
-    transition: color 0.3s;
-}
-
-.professor-contact a:hover {
-    color: #FFD700;
-}
-
-/* =======================
-   Forms (Contact, Login, Register, Upload, Newsletter)
-======================= */
-input, textarea, select {
-    width: 100%;
-    padding: 10px;
+.book-card .btn {
+    background-color: #FFD700; /* Gold */
+    color: #2E8B57; /* Green */
+    padding: 10px 20px;
+    text-decoration: none;
     font-size: 16px;
-    border: 1px solid #ddd;
     border-radius: 5px;
-    text-align: right;
+    transition: background-color 0.3s;
 }
 
-textarea {
-    resize: vertical;
+.book-card .btn:hover {
+    background-color: #e6b800;
+}
+
+/* Newsletter Section */
+.newsletter {
+    padding: 50px 0;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2E8B57; /* Green */
 }
 
 #newsletterForm {
     display: flex;
     justify-content: center;
     gap: 10px;
-    flex-wrap: wrap;
 }
 
-.newsletter h2,
-.contact h2,
-.login h2,
-.register h2,
-.upload-section h2 {
+#newsletterEmail {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 300px;
+    text-align: right; /* محاذاة النص في حقول الإدخال إلى اليمين */
+}
+
+.newsletter .btn {
+    background-color: #FFD700; /* Gold */
+    color: #2E8B57; /* Green */
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter .btn:hover {
+    background-color: #e6b800;
+}
+
+#newsletterMessage {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #2E8B57; /* Green */
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.contact h2 {
     text-align: center;
     font-size: 36px;
     margin-bottom: 40px;
-    color: #2E8B57;
+    color: #2E8B57; /* Green */
 }
 
-/* =======================
-   Footer
-======================= */
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contactForm input, #contactForm textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: right; /* محاذاة النص في حقول الإدخال إلى اليمين */
+}
+
+#contactForm textarea {
+    resize: vertical;
+}
+
+.contact .btn {
+    background-color: #FFD700; /* Gold */
+    color: #2E8B57; /* Green */
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact .btn:hover {
+    background-color: #e6b800;
+}
+
+#contactMessage {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #2E8B57; /* Green */
+}
+
+/* Login Section */
+.login {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.login h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #2E8B57; /* Green */
+}
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#loginForm input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: right; /* محاذاة النص في حقول الإدخال إلى اليمين */
+}
+
+.login .btn {
+    background-color: #FFD700; /* Gold */
+    color: #2E8B57; /* Green */
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login .btn:hover {
+    background-color: #e6b800;
+}
+
+.login p {
+    text-align: center;
+    font-size: 16px;
+}
+
+.login a {
+    color: #2E8B57; /* Green */
+    text-decoration: none;
+}
+
+.login a:hover {
+    text-decoration: underline;
+}
+
+/* Register Section */
+.register {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.register h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #2E8B57; /* Green */
+}
+
+#registerForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#registerForm input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: right; /* محاذاة النص في حقول الإدخال إلى اليمين */
+}
+
+.register .btn {
+    background-color: #FFD700; /* Gold */
+    color: #2E8B57; /* Green */
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register .btn:hover {
+    background-color: #e6b800;
+}
+
+.register p {
+    text-align: center;
+    font-size: 16px;
+}
+
+.register a {
+    color: #2E8B57; /* Green */
+    text-decoration: none;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
 footer {
-    background-color: #2E8B57;
+    background-color: #2E8B57; /* Green */
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -318,52 +628,135 @@ footer p {
     font-size: 14px;
 }
 
-/* =======================
-   Responsive Design
-======================= */
+/* Professors Section */
+.professors {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.professors h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #2E8B57; /* Green */
+}
+
+.professor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.professor-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.professor-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.professor-img {
+    width: 120px; /* حجم الصورة */
+    height: 120px; /* حجم الصورة */
+    border-radius: 50%; /* جعل الصورة دائرية */
+    margin-bottom: 15px; /* مسافة أسفل الصورة */
+    border: 3px solid #2E8B57; /* إطار أخضر حول الصورة */
+    object-fit: cover; /* تجنب تشويه الصورة */
+}
+
+.professor-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #2E8B57; /* Green */
+}
+
+.professor-title {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.professor-info {
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.professor-info p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.professor-info strong {
+    color: #2E8B57; /* Green */
+}
+
+.professor-contact {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.professor-contact a {
+    color: #2E8B57; /* Green */
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.professor-contact a:hover {
+    color: #FFD700; /* Gold */
+}
+
+/* تصميم للهواتف */
 @media (max-width: 768px) {
     .navbar .logo {
-        font-size: 20px;
+        font-size: 20px; /* تصغير حجم الشعار */
     }
 
     .nav-links {
-        display: none;
+        display: none; /* إخفاء القائمة */
     }
 
     .hero h1 {
-        font-size: 32px;
+        font-size: 32px; /* تصغير حجم العنوان */
     }
 
     .hero p {
-        font-size: 16px;
+        font-size: 16px; /* تصغير حجم النص */
     }
 
     .professor-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* عرض بطاقة واحدة في كل صف */
     }
 
     .professor-card {
-        padding: 15px;
+        padding: 15px; /* تقليل الحشو */
     }
 
     .professor-img {
-        width: 100px;
+        width: 100px; /* تصغير حجم الصورة */
         height: 100px;
     }
 
     .professor-card h3 {
-        font-size: 20px;
+        font-size: 20px; /* تصغير حجم العنوان */
     }
 
     .professor-title {
-        font-size: 16px;
+        font-size: 16px; /* تصغير حجم النص */
     }
 
     .professor-info p {
-        font-size: 14px;
+        font-size: 14px; /* تصغير حجم النص */
     }
 
     .professor-contact a {
-        font-size: 20px;
+        font-size: 20px; /* تصغير حجم الأيقونات */
     }
 }
